@@ -7,6 +7,7 @@
         <module>microservicecloud-provider-dept-8002</module>
         <module>microservicecloud-consumer-deot-80</module>
         <module>microsevicecloud-eureka-7001</module>
+        <module>microservicecloud-consumer-dept-feign</module>
     </modules>
 <!--    <parent>-->
 <!--        <groupId>org.springframework.boot</groupId>-->

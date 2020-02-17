@@ -1,11 +1,12 @@
 package com.example;
 
 import com.example.entity.Dept;
-import com.example.sercive.IDeptService;
+import com.example.service.DeptClientService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,16 +19,19 @@ import java.util.List;
 @SpringBootApplication
 @RestController
 @EnableEurekaClient
-public class AppApllcation8002
+@EnableFeignClients(basePackages = {"com.example"})
+public class AppApplication80
 {
     public static void main( String[] args ) {
-         SpringApplication.run(AppApllcation8002.class, args);
+        SpringApplication.run(AppApplication80.class, args);
     }
 
+
+
     @Autowired
-    private IDeptService deptService;
-    @GetMapping("/list")
+    private DeptClientService  deptClientService;
+    @GetMapping("/feign/list")
     public List<Dept> list(){
-        return deptService.list();
+        return deptClientService.list();
     }
 }
