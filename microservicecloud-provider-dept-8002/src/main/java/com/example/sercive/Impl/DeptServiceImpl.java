@@ -14,7 +14,7 @@ import java.util.List;
  * @Date: 2020/2/6 22:56
  */
 @Service
-public class DeptService implements IDeptService {
+public class DeptServiceImpl implements IDeptService {
     @Autowired
     private DeptMapper deptMapper;
     @Override
