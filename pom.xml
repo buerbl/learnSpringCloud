@@ -8,6 +8,7 @@
         <module>microservicecloud-consumer-deot-80</module>
         <module>microsevicecloud-eureka-7001</module>
         <module>microservicecloud-consumer-dept-feign</module>
+        <module>microservicecloud-zuul-gateway</module>
     </modules>
 <!--    <parent>-->
 <!--        <groupId>org.springframework.boot</groupId>-->
@@ -46,6 +47,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.10</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zuul</artifactId>
+                <version>1.3.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
