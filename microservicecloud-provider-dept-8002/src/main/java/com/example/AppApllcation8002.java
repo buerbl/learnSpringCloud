@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 @SpringBootApplication
 @RestController
 @EnableEurekaClient
