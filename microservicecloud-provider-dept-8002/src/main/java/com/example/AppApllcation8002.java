@@ -14,8 +14,7 @@ import java.util.List;
 @SpringBootApplication
 @RestController
 @EnableEurekaClient
-public class AppApllcation8002
-{
+public class AppApllcation8002 {
     public static void main( String[] args ) {
          SpringApplication.run(AppApllcation8002.class, args);
     }
@@ -25,5 +24,9 @@ public class AppApllcation8002
     @GetMapping("/list")
     public List<Dept> list(){
         return deptService.list();
+    }
+    @GetMapping("/provide")
+    public String provide(){
+        return "provide";
     }
 }
