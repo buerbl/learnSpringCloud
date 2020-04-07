@@ -9,6 +9,7 @@
         <module>microsevicecloud-eureka-7001</module>
         <module>microservicecloud-consumer-dept-feign</module>
         <module>microservicecloud-zuul-gateway</module>
+        <module>microservicecloud-provider-hystrix-8005</module>
     </modules>
     <groupId>com.example</groupId>
     <artifactId>springcloudlearn</artifactId>

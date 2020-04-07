@@ -1,0 +1,14 @@
+server:
+  port: 8010
+
+
+spring:
+  application:
+    name: microservicloud-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicloud-hystrix-8010
+    prefer-ip-address: true
