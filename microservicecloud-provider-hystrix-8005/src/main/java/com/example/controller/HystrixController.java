@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HystrixController {
 
-    @GetMapping("/hystrix")
+    @GetMapping("/hystrix1")
     @HystrixCommand(fallbackMethod = "fallback")
     public String hystrix() {
         int i = 1 / 0;

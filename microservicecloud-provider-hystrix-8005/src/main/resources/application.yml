@@ -12,3 +12,9 @@ eureka:
   instance:
     instance-id: microservicloud-hystrix-8010
     prefer-ip-address: true
+#暴露全部的监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
