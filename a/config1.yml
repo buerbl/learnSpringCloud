@@ -1,1 +1,12 @@
-foo=I'am default
+server:
+  port: 8005
+
+spring:
+  application:
+    name: microservicloud-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+
