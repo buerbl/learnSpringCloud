@@ -22,6 +22,7 @@ public class AppApllcation8021 {
 
     @GetMapping("/get")
     public String getfoo() {
+        System.out.println(foo);
         return foo;
     }
 

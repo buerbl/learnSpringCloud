@@ -6,7 +6,6 @@ spring:
     name: client
   cloud:
     config:
-      profile: client
       uri: http://localhost:8020
 
 
