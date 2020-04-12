@@ -1,12 +1,25 @@
-server:
-  port: 8005
+spring:
+  profiles:
+    active: p3
+
+---
 
 spring:
-  application:
-    name: microservicloud-zuul-gateway
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka
+  profiles: p1
+server:
+  port: 8081
 
 
+---
+
+spring:
+  profiles: p2
+server:
+  port: 8082
+
+---
+
+spring:
+  profiles: p3
+server:
+  port: 8083

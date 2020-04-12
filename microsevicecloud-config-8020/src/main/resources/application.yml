@@ -9,8 +9,8 @@ spring:
       server:
         git:
           uri: https://github.com/buerbl/learnSpringCloud.git
-          username: $
-          password: q$
+          username: #
+          password: #
           search-paths: a
 
 
