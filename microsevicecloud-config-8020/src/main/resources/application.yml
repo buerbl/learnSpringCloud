@@ -8,10 +8,9 @@ spring:
     config:
       server:
         git:
-          uri:
-          username:
-          password:
-
+          uri: https://github.com/buerbl/learnSpringCloud.git
+          username: 18319748706@163.com
+          password: qq837751454
 
 
 
