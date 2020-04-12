@@ -10,6 +10,7 @@
         <module>microservicecloud-consumer-dept-feign</module>
         <module>microservicecloud-zuul-gateway</module>
         <module>microservicecloud-provider-hystrix-8005</module>
+        <module>microsevicecloud-config-8020</module>
     </modules>
     <groupId>com.example</groupId>
     <artifactId>springcloudlearn</artifactId>

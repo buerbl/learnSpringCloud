@@ -1,0 +1,17 @@
+server:
+  port: 8020
+
+spring:
+  application:
+    name: microservicloud-config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          username:
+          password:
+
+
+
+
