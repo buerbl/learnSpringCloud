@@ -9,5 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/buerbl/config.git
+          username: *
+          password: *
 
 

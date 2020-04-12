@@ -1,0 +1,12 @@
+server:
+  port: 8021
+
+spring:
+  application:
+    name: client
+  cloud:
+    config:
+      profile: client
+      uri: http://localhost:8020
+
+
