@@ -8,7 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/buerbl/learnSpringboot.git
-
+          uri: https://github.com/buerbl/config.git
 
 
