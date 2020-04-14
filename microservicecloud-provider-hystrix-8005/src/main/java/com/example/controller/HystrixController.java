@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HystrixController {
 
-    @GetMapping("/hystrix1")
+    @GetMapping("/hellohystrix")
     @HystrixCommand(fallbackMethod = "fallback")
     public String hystrix() {
         int i = 1 / 0;
-        return "hystrix";
+        return "hellohystrix";
     }
 
     public String fallback() {
